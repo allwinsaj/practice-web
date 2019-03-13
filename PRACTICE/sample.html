@@ -1,0 +1,110 @@
+<html>
+<head>
+<style>
+form
+{
+border-radius:25px;
+background-color:hsla(0,100%,50%,0.3);
+height:150px;
+margin-bottom:10px;
+padding:20px;
+width: 400px;
+align="center"
+}
+button
+{
+ background-color:rgba(255,0,0,0.1);
+
+}
+body{
+background-color:hsla(0,100%,70%,0.1);
+</style>
+
+</head>
+<body>
+
+<!--
+<div>
+<form name="form1" >
+
+<input type="text"  name="Uname"  placeholder="UserName" required><br><br>
+
+<input type="Password"  name="pass"  placeholder="enter ur password" required><br><br>
+
+<button  onclick=my_function()>Login</button> 
+<button  onclick="document.getElementById('form2').style.display='bolck'">sign up</button> 
+
+</form>
+
+</div>
+-->
+
+<div>
+<form name="form2" >
+
+<input type="text"  name="Uname1"  id="uname" placeholder="UserName" ><br><br>
+
+<input type="Password"  name="pass1" id="pwd" placeholder="Enter ur password" ><br> <br>
+
+<input type="EmailId" name="email" id="mail" placeholder=" Enter email id" > 
+
+<br><br>
+
+<button onclick="my_function()" >create</button> 
+</form>
+</div>
+<script>
+function my_function(){
+var name=document.forms["form2"]["Uname1"].value;
+var password=document.forms["form2"]["pass1"].value;
+var mail=document.forms["form2"]["email"].value;
+var atpiont=mail.indexOf("@");
+var dotpoisition=mail.lastIndexOf(".");
+if(atpoint<1 || dotposition< atposition+2 || dotposition+2>=mail.length>
+ {
+ alert("please enter valid mail:"+atposition+ "dotpisition :"+dotposition);
+ }
+ alert("please enter valid mail:"+atposition+ "dotpisition :"+dotposition);
+ console.log(password);
+ 
+var re="/^[A-Za-z]\w{7-16}$/";
+console.log(password);
+
+ if(!re.match(password)){  
+  alert("Password must be alpha numeric");  
+ 
+  }  
+  
+alert("Welcome  " + name); 
+}
+
+function form_hide()
+{
+document.getElementById("form2").style.display="none";
+}
+
+function check()
+{
+
+var name=document.forms["myform1"]["Uname"].value;
+var password=document.forms["myform"]["pass"].value;
+
+ if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }  
+var re=/[0-9]/;
+ if(re.test(res)){  
+  alert("Password must be alpha numeric");  
+  return false;  
+  }  
+
+
+
+}
+
+</script>
+
+
+</body>
+</html>
