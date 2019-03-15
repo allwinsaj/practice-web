@@ -1,0 +1,50 @@
+<html>
+      <head>
+            <link rel="stylesheet" type="text/css" href="js1.css">
+          <script>
+
+              var indexofweeks = 0;
+              var indexofmonths= 0;
+              var days_of_week = [ "Monday", "Tuesday", "Wednesday", "Thursday",
+                   "Friday", "Saturday", "Sunday" ] ;
+              var months=["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+              function myfunction(){
+                  document.getElementById("example").innerHTML=days_of_week[indexofweeks];
+                  indexofweeks=indexofweeks < days_of_week.length-1 ? ++indexofweeks: 0;
+
+                  /*------------------------------------------------------------
+                  var pre=document.getElementById("target").innerHTML;
+                var pre_length=pre.length;
+                pre_length--;
+                var pre_char=pre.charAt(pre_length);
+                if(pre.length==0 ||pre_char=="!"){
+                    pre=pre+"Hello..";
+                }
+                if(pre_char=="."){
+                    pre=pre+"Welcome!!";
+                }
+                document.getElementById("target").innerHTML=pre;
+                ----------------------------------------------------------------------*/
+                }
+                function myfunction1(){
+                  document.getElementById("example1").innerHTML=months[indexofmonths];
+                  indexofmonths=indexofmonths < months.length-1 ? ++indexofmonths: 0;
+                }
+          </script>
+         </head>
+                <body>
+                    <div id="example">Monday</div>
+                    <br>
+                    <br>
+                    <div id="example1">January</div>
+                    <br>
+                    <br>
+                    <button onclick="myfunction()" id="b1">Changeday</button>
+                   
+                    <button onclick="myfunction1()" id="b2">changemonth</button>
+
+    
+
+                  </body>
+</html>   

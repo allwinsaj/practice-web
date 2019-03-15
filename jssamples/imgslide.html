@@ -1,0 +1,69 @@
+<html>
+
+<head>
+<style>
+.btn1{
+    background-color: red;
+    margin-left:500px;
+    height: 50px;
+    width: 200px;
+    float: left;
+}
+.btn{
+    background-color: red;
+    height: 50px;
+    width: 200px;
+    float: left;
+}
+#image{
+    margin-left:500px;
+
+}
+</style>
+</head>
+
+<body>
+    <img src="img1.jpg" id="image">
+    <br>
+    <br>
+    
+   
+    <button onclick="previous()" class="btn1">Previous</button>
+    <button onclick="next()" class="btn">NextImage</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        var i = 0;
+        var a = ["img2.jpg", "img3.jpg", "img4.jpg", "img5.jpg"];
+
+        function next() {
+            if (i < 4) {
+                var Element = document.getElementById("image");
+                Element.setAttribute("src", a[i]);
+                i++;
+            }
+            else {
+                i = 0;
+                var Element = document.getElementById("image");
+                Element.setAttribute("src", a[i]);
+            }
+        }
+        function previous() {
+            if (i == 0) {
+                i=3;
+                var Element = document.getElementById("image");
+                Element.setAttribute("src", a[i]);
+
+            }
+            else {
+                i--;
+                var Element = document.getElementById("image");
+                Element.setAttribute("src", a[i]);
+            }
+        }
+
+        
+
+
+    </script>
+</body>
+</html>

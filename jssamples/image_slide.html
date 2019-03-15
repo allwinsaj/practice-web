@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title>changing image</title>
+</head>
+
+<body>
+    <a href="" class="lnk"><img src="img1.jpg" id="imgs" onclick="change_image()" alt="image not displayed" width="200px" height="200px"></a>
+    <script>
+         var i = 0;
+         var a = ["img2.jpg", "img3.jpg", "img4.jpg", "img5.jpg"];
+        function change_image(){
+               if(i==0){
+                var Element = document.getElementById("imgs");
+                   Element.attr("src","img2.jpg");
+               }
+               else if(i==1){
+                var Element = document.getElementById("imgs");
+                   Element.attr("src","img3.jpg");
+               }
+               else if(i==2){
+                var Element = document.getElementById("imgs");
+                   Element.attr("src","img4.jpg");
+               }
+               else if(i==3){
+                var Element = document.getElementById("imgs");
+                   Element.attr("src","img5.jpg");
+               }
+               
+               
+            }
+            
+        }
+
+    </script>
+</body>
+
+</html>

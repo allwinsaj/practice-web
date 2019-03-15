@@ -1,0 +1,38 @@
+body{
+    background-color: lemonchiffon;
+}
+#example{
+    text-align: center;
+    color: black;
+    font-size:40px; 
+    font-style: oblique;
+}
+#example1{
+    text-align: center;
+    color: black;
+    font-size:40px; 
+
+}
+#b1{
+    background-color: orangered;
+    height: 40px;
+    width:100px;
+    margin-left: 600px;
+}
+#b1:hover{
+    background-color: blue;
+}
+#b2:hover{
+    background-color: blue;
+}
+#b2{
+    background-color: orangered;
+    height: 40px;
+    width:100px;
+}
+#b1:active{
+    color: rgb(247, 0, 255);
+}
+#b2:active{
+    color: rgb(247, 0, 255);
+}
